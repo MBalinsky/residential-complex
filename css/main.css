@@ -199,7 +199,7 @@ input[type=submit]:hover {
 .header {
   padding: 30px 0 75px;
   min-height: 840px;
-  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url(../../img/rectangle.jpg);
+  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../img/rectangle.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -319,7 +319,7 @@ input[type=submit]:hover {
   top: 0;
   width: 21px;
   height: 21px;
-  background-image: url(../../img/placeholder.svg);
+  background-image: url("../img/placeholder.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -331,7 +331,7 @@ input[type=submit]:hover {
   }
 }
 .header .info-tel::before {
-  background-image: url(../../img/phone-call.svg);
+  background-image: url("../img/phone-call.svg");
 }
 .header__footer {
   display: grid;
@@ -505,7 +505,7 @@ input[type=submit]:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url(../../img/rectangle-contact-form.jpg), #C4C4C4;
+  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("../img/rectangle-contact-form.jpg"), #C4C4C4;
 }
 @media (max-width: 959px) {
   .cta {
@@ -803,7 +803,7 @@ input[type=submit]:hover {
 }
 
 [class*=balloon__close-button] {
-  background: url("../../img/map/cross.svg") 50% no-repeat !important;
+  background: url("../img/map/cross.svg") 50% no-repeat !important;
   width: 15px !important;
   height: 15px !important;
   margin: 10px 7px;
