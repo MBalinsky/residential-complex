@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: $raleway;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: $dark;
+    color: $white;
+}
+
+a{
+    color: $white;
+    transition: color .2s ease-in-out;
+    &:hover{
+        color: $accent;
+    }
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.visually-hidden{
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.title-2{
+    font-family: $playFair;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: $accent;
+    @include mediaTablet{
+        font-size: 28px;
+    }
+}
+
+.form__input {
+    height: 50px;
+    text-align: center;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: $white;
+    font-size: 14px;
+    transition: background-color .2s ease-in;
+    &::placeholder{
+        color: $placeholder-color;
+    }
+    &:focus{
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+}
+.form__privacy {
+    font-size: 13px;
+    color: #E7E7E7;
+    text-align: center;
+    line-height: 1.23;
+    @include mediaTablet{
+        grid-row: 4 / 5;
+    }
+}
+input[type="submit"] {
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: $white;
+    font-weight: 700;
+    padding: 12px;
+    transition: background-color .2s ease-in-out;
+    background-color: $accent;
+    &:hover{
+        background-color: saturate($accent, 10%);
+    }
+}
+
+.noscroll{
+    overflow-y: hidden;
+}
