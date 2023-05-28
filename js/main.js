@@ -3,13 +3,23 @@
 
 const navBtn = document.querySelector('.nav-icon-btn');
 const navIcon = document.querySelector('.nav-icon');
-const nav = document.querySelector('.header__top-row')
+const nav = document.querySelector('.header__top-row');
+const navLink = document.querySelectorAll('.nav ul li a');
 
 navBtn.onclick = function (){
     navIcon.classList.toggle('nav-icon--active');
     nav.classList.toggle('header__top-row--active');
     document.body.classList.toggle('.noscroll');
 }
+
+navLink.forEach(el => {
+	el.addEventListener("click", () => {
+		navIcon.classList.remove('nav-icon--active');
+		nav.classList.remove('header__top-row--active');
+		document.body.classList.remove('.noscroll');
+	})
+})
+
 
 //phone mask
 
